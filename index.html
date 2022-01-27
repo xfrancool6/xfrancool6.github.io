@@ -1,116 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <title>Login Dinámico..</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+    <title>Buscaminas Franeli</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/crono.css" />
+    <link rel="icon" href="bang.ico" type="image/ico" />
+    <script src="js/sweetalert2.all.min.js"></script>
   </head>
-  <body>
-    <div class="container">
-      <header>Formulario de registro</header>
-      <div class="progress-bar">
-        <div class="step">
-          <p>Nombre&nbsp;</p>
-          <div class="bullet">
-            <span>1</span>
+
+  <body oncontextmenu="return false">
+    <br />
+    <a href="https://xfrancool.github.io/portafolio/" target=_blank><button id="pers"><b>Franeli</b></button></a>
+
+    <span id="juego-nuevo" onclick="nuevoJuego()"> Juego Nuevo </span>
+
+    <span id="minas"> 000 </span>
+
+    <span id="Ajustes" onclick="ajustes()">
+      <i class="fas fa-cog"></i>
+    </span>
+
+    <div class="contain">
+      <div class="cc-body">
+          <div class="cc-time">
+              <div class="sscreen">
+                
+
+                  <div class="c-btn">
+                    <span id="time">00:00:00.00</span>
+                      <button id="btn-start">&#9658;</button>
+                      <button id="btn-stop">&#8718;</button>
+                      <button id="btn-reset">&#8635;</button>
+                  </div>
+              </div>
+
           </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p>Contacto&nbsp;</p>
-          <div class="bullet">
-            <span>2</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p>Nacimiento&nbsp;</p>
-          <div class="bullet">
-            <span>3</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
-        <div class="step">
-          <p>Enviar</p>
-          <div class="bullet">
-            <span>4</span>
-          </div>
-          <div class="check fas fa-check"></div>
-        </div>
       </div>
-      <div class="form-outer">
-        <form action="#">
-          <div class="page slide-page">
-            <div class="title">Información Básica:</div>
-            <div class="field">
-              <div class="label">Nombre</div>
-              <input type="text">
-            </div>
-            <div class="field">
-              <div class="label">Apellido</div>
-              <input type="text">
-            </div>
-            <div class="field">
-              <button class="firstNext next">Siguiente</button>
-            </div>
-          </div>
+      
+  </div>
 
-          <div class="page">
-            <div class="title">Información de contacto:</div>
-            <div class="field">
-              <div class="label">Correo</div>
-              <input type="text">
-            </div>
-            <div class="field">
-              <div class="label">Numero de teléfono</div>
-              <input type="Number">
-            </div>
-            <div class="field btns">
-              <button class="prev-1 prev">Anterior</button>
-              <button class="next-1 next">Siguiente</button>
-            </div>
-          </div>
+    <table cellspacing="0" cellpadding="0" id="tablero"></table>
 
-          <div class="page">
-            <div class="title">Fecha de cumpleaños:</div>
-            <div class="field">
-              <div class="label">Fecha</div>
-              <input type="text">
-            </div>
-            <div class="field">
-              <div class="label">Género</div>
-              <select>
-                <option>Masculino</option>
-                <option>Femenino</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="field btns">
-              <button class="prev-2 prev">Anterior</button>
-              <button class="next-2 next">Siguiente</button>
-            </div>
-          </div>
-
-          <div class="page">
-            <div class="title">Ingresar:</div>
-            <div class="field">
-              <div class="label">Usuario</div>
-              <input type="text">
-            </div>
-            <div class="field">
-              <div class="label">Contraseña</div>
-              <input type="password">
-            </div>
-            <div class="field btns">
-              <button class="prev-3 prev">Anterior</button>
-              <button class="submit">Siguiente</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/crono.js"></script>
 
   </body>
 </html>
