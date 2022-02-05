@@ -1,55 +1,171 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Buscaminas Franeli</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-    
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/crono.css" />
-    <link rel="icon" href="bang.ico" type="image/ico" />
-    <script src="js/sweetalert2.all.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
   </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Reproductor mp3</h1>
 
-  <body oncontextmenu="return false">
-    <br />
-    <a href="https://xfrancool.github.io/portafolio/" target=_blank><button id="pers"><b>Franeli</b></button></a>
-
-    <span id="juego-nuevo" onclick="nuevoJuego()"> Juego Nuevo </span>
-
-    <span id="minas"> 000 </span>
-
-    <span id="Ajustes" onclick="ajustes()">
-      <i class="fas fa-cog"></i>
-    </span>
-
-    <div class="contain">
-      <div class="cc-body">
-          <div class="cc-time">
-              <div class="sscreen">
-                
-
-                  <div class="c-btn">
-                    <span id="time">00:00:00.00</span>
-                      <button id="btn-start">&#9658;</button>
-                      <button id="btn-stop">&#8718;</button>
-                      <button id="btn-reset">&#8635;</button>
-                  </div>
-              </div>
-
+      <div class="box-container">
+        <div class="box" data-src="images/music-7.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-7.jpg" alt="" />
           </div>
+          <div class="content">
+            <h3>Stranger Things</h3>
+          </div>
+        </div>
+        <div class="box" data-src="images/music-1.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>NEFFEX cold</h3>
+          </div>
+        </div>
+
+        <div class="box" data-src="images/music-2.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-2.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Numb Remix</h3>
+          </div>
+        </div>
+
+        <div class="box" data-src="images/music-3.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-3.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>arround the world</h3>
+          </div>
+        </div>
+
+        <div class="box" data-src="images/music-4.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-4.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>THNK U jay someday</h3>
+          </div>
+        </div>
+
+        <div class="box" data-src="images/music-5.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-5.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>NEFFEX life</h3>
+          </div>
+        </div>
+
+        <div class="box" data-src="images/music-6.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Coco</h3>
+          </div>
+        </div>
+        <div class="box" data-src="images/music-8.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-8.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>XXXTentación</h3>
+          </div>
+        </div>
+        <div class="box" data-src="images/music-9.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-8.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>XXXTentación</h3>
+          </div>
+        </div>
+        <div class="box" data-src="images/music-10.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-10.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Billie jean</h3>
+          </div>
+        </div>
+        <div class="box" data-src="images/music-11.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-11.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Residente</h3>
+          </div>
+        </div>
+        <div class="box" data-src="images/music-12.mp3">
+          <div class="image">
+            <div class="play">
+              <i class="fas fa-play"></i>
+            </div>
+            <img src="images/album-12.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Brock-Eternidad</h3>
+          </div>
+        </div>
       </div>
-      
-  </div>
+    </div>
 
-    <table cellspacing="0" cellpadding="0" id="tablero"></table>
-
-    <script src="js/app.js"></script>
-    <script src="js/crono.js"></script>
-
+    <div class="music-player">
+      <div id="close-player" class="fas fa-angle-up"></div>
+      <h3 class="music-title">(Reproduce tu mp3)</h3>
+      <audio src="" controls></audio>
+    </div>
   </body>
 </html>
