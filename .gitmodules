@@ -1,9 +1,0 @@
-[submodule "fonts"]
-	path = fonts
-	url = https://github.com/xfrancool6/xfrancool6.github.io.git
-[submodule "imgmov"]
-	path = imgmov
-	url = https://github.com/xfrancool6/xfrancool6.github.io.git
-[submodule "unctorneo"]
-	path = unctorneo
-	url = https://github.com/xfrancool6/xfrancool6.github.io.git
